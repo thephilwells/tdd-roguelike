@@ -2,9 +2,11 @@
   "name": "tdd-roguelike",
   "version": "1.0.0",
   "description": "A roguelike built using React Ink and TDD methodologies",
-  "main": "App.js",
+  "main": "src/App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src --out-dir=build --ignore '**/*.test.js'",
+    "start": "npm run build && node build/App.js"
   },
   "repository": {
     "type": "git",
