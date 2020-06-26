@@ -1,6 +1,8 @@
 import React from 'react'
-import { Text } from 'ink'
+import { render, Text } from 'ink'
 
-export const App = ({ state }) => {
+export const App = ({ state = { title: 'TDD Roguelike!' } }) => {
   return <Text>{state.title}</Text>
-} 
+}
+
+render(<App />)
