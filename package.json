@@ -4,7 +4,7 @@
   "description": "A roguelike built using React Ink and TDD methodologies",
   "main": "App.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,13 +22,18 @@
   },
   "homepage": "https://github.com/thephilwells/tdd-roguelike#readme",
   "dependencies": {
-    "@babel/cli": "^7.10.3",
-    "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
+    "@babel/runtime": "^7.10.3",
     "chalk": "^4.1.0",
     "ink": "^2.7.1",
-    "jest": "^26.1.0",
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "ink-testing-library": "^2.0.0",
+    "jest": "^26.1.0"
   }
 }
