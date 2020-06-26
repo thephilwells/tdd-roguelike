@@ -1,4 +1,4 @@
-import React, { useRef, defaultProps } from 'react'
+import React from 'react'
 import { render, Text } from 'ink'
 
 export const App = ({ state = { title: 'TDD Roguelike!' } }) => {
