@@ -1,0 +1,24 @@
+{
+  "name": "tdd-roguelike",
+  "version": "1.0.0",
+  "description": "A roguelike built using React Ink and TDD methodologies",
+  "main": "App.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thephilwells/tdd-roguelike.git"
+  },
+  "keywords": [
+    "react-ink",
+    "roguelike",
+    "tdd"
+  ],
+  "author": "Phil Wells",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thephilwells/tdd-roguelike/issues"
+  },
+  "homepage": "https://github.com/thephilwells/tdd-roguelike#readme"
+}
