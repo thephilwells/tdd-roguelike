@@ -5,7 +5,7 @@ import { App } from '../App'
 describe('APP', () => {
   it('returns the name of the game', () => {
     // Arrange
-    const { lastFrame, rerender } = render(<App />)
+    const { lastFrame } = render(<App />)
 
     // Assert
     expect(lastFrame()).toMatch('TDD Roguelike!')
