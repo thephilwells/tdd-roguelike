@@ -4,6 +4,7 @@
   "description": "A roguelike built using React Ink and TDD methodologies",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "babel src --out-dir=build --ignore '**/*.test.js'",
     "start": "npm run build && node build/App.js"
   },
