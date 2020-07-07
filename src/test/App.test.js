@@ -8,6 +8,6 @@ describe('APP', () => {
     const { lastFrame } = render(<App />)
 
     // Assert
-    expect(lastFrame()).toMatch('TDD Roguelike!')
+    expect(lastFrame()).toMatchSnapshot()
   })
 })
