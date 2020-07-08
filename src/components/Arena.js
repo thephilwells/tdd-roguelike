@@ -1,8 +1,17 @@
-import React from 'react'
-import { render, Box, Text } from 'ink'
+import React, { useState } from 'react'
+import { render, Text, Box } from 'ink'
+import { TitleCard } from './titlecard'
 
-export const Arena = () => (
-  <Box display="flex" padding={2} margin={1} align-self="flex-start" borderStyle="double">
-    <Text>foo</Text>
-  </Box>
-)
+export const Arena = (props) => {
+  let [gameState, updateGameState] = useState(props)
+  return (
+    <Box
+      width={80}
+      height={45}
+      borderStyle="double"
+      display="flex"
+    >
+      <TitleCard />
+    </Box>
+  )
+}
