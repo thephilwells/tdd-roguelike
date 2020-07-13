@@ -11,7 +11,7 @@ export const Arena = (props) => {
       borderStyle="double"
       display="flex"
     >
-      <TitleCard />
+      <TitleCard {...gameState}/>
     </Box>
   )
 }

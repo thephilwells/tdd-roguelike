@@ -9,4 +9,4 @@ export const App = () => {
   return <Arena {...state}/>
 }
 
-render(<App />)
+render(<App />, {patchConsole: false})

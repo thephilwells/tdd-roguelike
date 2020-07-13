@@ -6,7 +6,7 @@ export const TitleCard = (props) => {
   return (
     <Box flexDirection="column" width={80} justifyContent="space-around">
       <Box height="85%" alignItems="center" justifyContent="center">
-        <Text>TDD Roguelike!</Text>
+        <Text>{state.title}</Text>
       </Box>
       <Box height="15%" alignItems="center" justifyContent="center">
         <Text>[Press any key to start...]</Text>
