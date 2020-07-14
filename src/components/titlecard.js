@@ -4,7 +4,7 @@ import { render, Text, Box } from 'ink'
 export const TitleCard = (props) => {
   let [state, setSate] = useState(props)
   return (
-    <Box flexDirection="column" width={80} justifyContent="space-around">
+    <Box flexDirection="column" width="100%" justifyContent="space-around">
       <Box height="85%" alignItems="center" justifyContent="center">
         <Text>{state.title}</Text>
       </Box>
