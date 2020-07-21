@@ -19,7 +19,7 @@ exports[`APP returns the name of the game 1`] = `
 ║                                                                              ║
 ║                                                                              ║
 ║                                                                              ║
-║                                     FOO!                                     ║
+║                                TDD Roguelike!                                ║
 ║                                                                              ║
 ║                                                                              ║
 ║                                                                              ║

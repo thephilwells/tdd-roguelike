@@ -1,14 +1,15 @@
 import React from "react";
 import { render } from "ink-testing-library";
-import { App, GameContext } from "../App";
+import Game from '../game-hooks'
+import { App } from "../App";
 
 describe("APP", () => {
   it("returns the name of the game", () => {
     // Arrange
     const { lastFrame } = render(
-      <GameContext.Provider value={{ title: "FOO!" }}>
+      <Game>
         <App />
-      </GameContext.Provider>
+     </Game>
     );
 
     // Assert
