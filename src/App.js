@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { createContext } from 'react'
 import { render, Text } from 'ink'
 import { Arena } from './components/Arena'
 
+export const GameContext = createContext()
+
 export const App = () => {
-  const [state, setState] = useState({
-    title: "TDD Roguelike!",
-  }) 
-  return <Arena {...state}/>
+  return <Arena />
 }
 
-render(<App />, {patchConsole: false})
+const defaultState = {
+  title: 'TDD Roguelike!'
+}
+
+render(
+  <GameContext.Provider value={defaultState}>
+    <App />
+  </GameContext.Provider>,
+  {patchConsole: false}
+)

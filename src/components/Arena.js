@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { render, Text, Box } from 'ink'
 import { TitleCard } from './titlecard'
 
-export const Arena = (props) => {
-  let [gameState, updateGameState] = useState(props)
+export const Arena = () => {
   return (
     <Box
       width={80}
@@ -11,7 +10,7 @@ export const Arena = (props) => {
       borderStyle="double"
       display="flex"
     >
-      <TitleCard {...gameState}/>
+      <TitleCard />
     </Box>
   )
 }

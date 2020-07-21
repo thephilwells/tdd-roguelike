@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { GameContext } from '../App'
 import { render, Text, Box } from 'ink'
 
 export const TitleCard = (props) => {
-  let [state, setSate] = useState(props)
+  const state = useContext(GameContext)
   return (
     <Box flexDirection="column" width="100%" justifyContent="space-around">
       <Box height="85%" alignItems="center" justifyContent="center">
