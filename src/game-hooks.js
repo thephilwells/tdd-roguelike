@@ -8,7 +8,7 @@ const defaultState = {
   screen: 'title'
 };
 
-export default function Game({ children }) {
+export default function StateProvider({ children }) {
   const [state, setState] = useState(defaultState);
 
   const setScreen = (screen) => {

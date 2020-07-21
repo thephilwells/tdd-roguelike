@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import Game from './game-hooks'
+import StateProvider from './game-hooks'
 import { render, Text } from 'ink'
 import { Arena } from './components/Arena'
 
@@ -8,8 +8,8 @@ export const App = () => {
 }
 
 render(
-  <Game>
+  <StateProvider>
     <App />
-  </Game>,
+  </StateProvider>,
   {patchConsole: false}
 )

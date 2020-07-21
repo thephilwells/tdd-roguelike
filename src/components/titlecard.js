@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useGameContext } from '../game-hooks'
 import { render, Text, Box } from 'ink'
 
-export const TitleCard = (props) => {
+export const TitleCard = () => {
   const { state } = useGameContext()
   return (
     <Box flexDirection="column" width="100%" justifyContent="space-around">
